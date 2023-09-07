@@ -5,6 +5,7 @@ A new Flutter project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+it basicly has a splash screen and then the app opens to display the requied neccessities.
 
 A few resources to get you started if this is your first Flutter project:
 
