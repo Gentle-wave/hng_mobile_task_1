@@ -1,6 +1,7 @@
 # hng_mobile_task_1
 
 A new Flutter project.
+no external packages was used unnecesrily
 
 ## Getting Started
 
