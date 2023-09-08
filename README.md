@@ -3,6 +3,7 @@
 A new Flutter project.
 no external packages was used unnecessarily. 
 to run it the projects uses mini sdk version 19 and above. please takenote.
+A refresh button was added to the webpage view that can be used when necessary
 
 ## Getting Started
 
