@@ -26,7 +26,20 @@ WebViewController controller = WebViewController()
   )
   ..loadRequest(Uri.parse('https://github.com/Gentle-wave'));
 
+  Future<void> initializeWebView() async {
+  await Future.delayed(const Duration(seconds: 1));
+  controller.loadRequest(Uri.parse('https://github.com/Gentle-wave'));
+}
+
+@override
+void initState() {
+  //super.initState();
+  initializeWebView();
+}
+
+
 class WebViewPage extends StatefulWidget {
+  
   const WebViewPage({super.key});
    final double progress = 0.0;
 
@@ -65,4 +78,5 @@ class _WebViewPageState extends State<WebViewPage> {
     );
   }
 }
+
 
