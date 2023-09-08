@@ -89,17 +89,17 @@ class HomeScreen extends StatelessWidget {
                   AssetImage('assets/image_assets/profile_image.jpg'),
               radius: 120.0,
             ),
-            const SizedBox(height: 20.0),
+            const SizedBox(height: 25.0),
             const Text(
               'ADEBAYO',
               style: TextStyle(
-                fontSize: 24.0,
+                fontSize: 40.0,
                 fontStyle: FontStyle.italic,
                 fontWeight: FontWeight.bold,
                 color: Colors.green, // White text color
               ),
             ),
-            const SizedBox(height: 20.0),
+            const SizedBox(height: 25.0),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
