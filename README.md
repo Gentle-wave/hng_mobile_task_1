@@ -4,7 +4,7 @@ A new Flutter project.
 no external packages was used unnecessarily. 
 to run it the projects uses mini sdk version 19 and above. please takenote.
 A refresh button was added to the webpage view that can be used when necessary
-
+https://appetize.io/app/okoxd7pzxiijpnnsxn6lbdu43m?device=pixel4&osVersion=11.0&scale=75
 ## Getting Started
 
 This project is a starting point for a Flutter application.
