@@ -7,7 +7,11 @@ WebViewController controller = WebViewController()
   ..setNavigationDelegate(
     NavigationDelegate(
       onProgress: (int progress) {
-         // Update loading bar.
+        const Center(
+          child: CircularProgressIndicator(
+            color: Colors.green,
+          ),
+        );
       },
       onPageStarted: (String url) {},
       onPageFinished: (String url) {},
@@ -24,22 +28,40 @@ WebViewController controller = WebViewController()
 
 class WebViewPage extends StatefulWidget {
   const WebViewPage({super.key});
-  
+   final double progress = 0.0;
 
   @override
   State<WebViewPage> createState() => _WebViewPageState();
 }
 
 class _WebViewPageState extends State<WebViewPage> {
-  double progress = 0.0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My git profile'),
+        centerTitle: true,
+        titleSpacing: 30.00,
+        title: const Text(
+          'My github profile',
+          style: TextStyle(fontSize: 20.0),
+        ),
         backgroundColor: Colors.green,
       ),
-      body: WebViewWidget(controller: controller),
+           body: Stack(
+        children: [
+          WebViewWidget(controller: controller),
+          FloatingActionButton(
+            mini: true,
+            onPressed: () {
+              controller.reload();
+            },
+            child: const Icon(
+              Icons.refresh,
+              size: 20.0,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
